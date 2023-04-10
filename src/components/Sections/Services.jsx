@@ -5,21 +5,21 @@ import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
 // Assets
-import AddImage1 from "../../assets/img/add/1.png";
-import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
-import AddImage4 from "../../assets/img/add/4.png";
+import AddImage1 from "../../assets/img/about/about3.jpg";
+import AddImage3 from "../../assets/img/about/about2.jpg";
+import AddImage2 from "../../assets/img/about/about1.png";
+import AddImage4 from "../../assets/img/about/about4.jpg";
 
 export default function Services() {
   return (
     <Wrapper id="services">
-      <div className="lightBg" style={{ padding: "50px 0" }}>
+      {/* <div className="lightBg" style={{ padding: "50px 0" }}>
         <div className="container">
           <ClientSlider />
         </div>
-      </div>
+      </div> */}
       <div className="whiteBg" style={{ padding: "60px 0" }}>
-        <div className="container">
+        {/* <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">Our Awesome Services</h1>
             <p className="font13">
@@ -54,7 +54,7 @@ export default function Services() {
               <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
-        </div>
+        </div> */}
         <div className="lightBg">
           <div className="container">
             <Advertising className="flexSpaceCenter">
@@ -62,15 +62,27 @@ export default function Services() {
                 <h4 className="font15 semiBold">A few words about company</h4>
                 <h2 className="font40 extraBold">A Study of Creativity</h2>
                 <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum.
                 </p>
-                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
+                <ButtonsRow
+                  className="flexNullCenter"
+                  style={{ margin: "30px 0" }}
+                >
                   <div style={{ width: "190px" }}>
-                    <FullButton title="Get Started" action={() => alert("clicked")} />
+                    <FullButton
+                      title="Get Started"
+                      action={() => alert("clicked")}
+                    />
                   </div>
                   <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} border />
+                    <FullButton
+                      title="Contact Us"
+                      action={() => alert("clicked")}
+                      border
+                    />
                   </div>
                 </ButtonsRow>
               </AddLeft>

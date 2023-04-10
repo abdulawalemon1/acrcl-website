@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
 // Assets
-import HeaderImage from "../../assets/img/header-img.png";
+import HeaderImage from "../../assets/img/header-img1.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 
@@ -16,10 +16,10 @@ export default function Header() {
             AGILITY CHILDREN RESIDENTIAL CARE LTD
           </h1>
           <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum.
+            We set up Agility One to provide high-quality residential care
+            services for up to five Children Looked-After (CLA) assessed as
+            experiencing mild and moderate learning disabilities in the London
+            Borough of Redbridge and surrounding areas.
           </HeaderP>
           <BtnWrapper>
             <FullButton title="Get Started" />
@@ -41,15 +41,16 @@ export default function Header() {
             <div>
               <p className="font15 whiteColor">
                 <em>
-                  Friends, such as we desire, are dreams and fables. Friendship
-                  demands the ability to do without it.
+                  Our mission is to make a positive impact on the lives of our
+                  children young people and families, by being outstanding
+                  partner.
                 </em>
               </p>
               <p
                 className="font13 orangeColor textRight"
                 style={{ marginTop: "10px" }}
               >
-                Ralph Waldo Emerson
+                -Agility Children Residential Care LTD
               </p>
             </div>
           </QuoteWrapper>

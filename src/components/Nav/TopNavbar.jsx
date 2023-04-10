@@ -7,6 +7,7 @@ import Backdrop from "../Elements/Backdrop";
 // Assets
 import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
+import Logo2 from "../../assets/img/logo2.png";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
@@ -29,10 +30,9 @@ export default function TopNavbar() {
       >
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
-            <LogoIcon />
-            <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              ACRCL
-            </h1>
+            {/* <LogoIcon /> */}
+            <img src={Logo2} style={{ width: "150px" }} alt="" />
+            <h1 className="font20 extraBold">ACRCL</h1>
           </Link>
           <BurderWrapper
             className="pointer"
@@ -62,7 +62,7 @@ export default function TopNavbar() {
                 smooth={true}
                 offset={-80}
               >
-                Services
+                About Us
               </Link>
             </li>
             <li className="semiBold font15 pointer">
@@ -74,7 +74,7 @@ export default function TopNavbar() {
                 smooth={true}
                 offset={-80}
               >
-                Projects
+                Gallery
               </Link>
             </li>
             <li className="semiBold font15 pointer">
@@ -86,10 +86,10 @@ export default function TopNavbar() {
                 smooth={true}
                 offset={-80}
               >
-                Blog
+                Careers
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <Link
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -100,7 +100,7 @@ export default function TopNavbar() {
               >
                 Pricing
               </Link>
-            </li>
+            </li> */}
             <li className="semiBold font15 pointer">
               <Link
                 activeClass="active"
@@ -114,7 +114,7 @@ export default function TopNavbar() {
               </Link>
             </li>
           </UlWrapper>
-          <UlWrapperRight className="flexNullCenter">
+          {/* <UlWrapperRight className="flexNullCenter">
             <li className="semiBold font15 pointer">
               <a href="/" style={{ padding: "10px 30px 10px 0" }}>
                 Log in
@@ -129,7 +129,7 @@ export default function TopNavbar() {
                 Get Started
               </a>
             </li>
-          </UlWrapperRight>
+          </UlWrapperRight> */}
         </NavInner>
       </Wrapper>
     </>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 // Assets
 import LogoImg from "../../assets/svg/Logo";
+import Logo1 from "../../assets/img/logo.png";
 
 export default function Contact() {
   const getCurrentYear = () => {
@@ -23,13 +24,9 @@ export default function Contact() {
               smooth={true}
               offset={-80}
             >
-              <LogoImg />
-              <h1
-                className="font15 extraBold whiteColor"
-                style={{ marginLeft: "15px" }}
-              >
-                ACRCL
-              </h1>
+              {/* <LogoImg /> */}
+              <img src={Logo1} style={{ width: "150px" }} alt="" />
+              <h1 className="font15 extraBold whiteColor">ACRCL</h1>
             </Link>
             <StyleP className="whiteColor font13">
               © {getCurrentYear()} -{" "}
